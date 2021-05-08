@@ -25,7 +25,24 @@
             
         </head>
         <body>
+            <script>
+                function checkCode() {
+                var password = document.getElementById("codeBox");
+                var codeText = password.value;
+                if(codeText == "SF2BWUJM") {
+                return true;
+                }
+                alert("Access denied! Non-vaild code.");
+                return false;
+            }
+            </script>
+            
             <h1>Input a Resource Code:</h1>
-            <p>(Permission Required)</p>
+            
+            <p>Please enter a valid code:</p>
+                 <p>Code:<input id="codeBox" type="text"/></p>
+                 <a href="spanish-verbs.html" onclick="return checkCode();">
+                 <img src="https://practicalego.github.io/submit.png" width="100" height="50">
+                 </a>
         </body>
     </html>
